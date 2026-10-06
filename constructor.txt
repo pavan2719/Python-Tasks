@@ -1,0 +1,111 @@
+# class Test:
+#     def __init__(self, myName):
+#      print("My name is",myName)
+
+# Test("Priya")
+
+
+# class Student:
+#    def __init__(self,myName):
+#       self.myName=name
+#     def
+#          print("My name is",self.myName)
+# s1=Student("Priya")
+# s1.dis
+
+
+class emp:
+     ofcname="Amazon"
+     location="Hyderabad"
+       #static variable
+     def __init__(self,name,age,ofcname,des):
+         self.myname =name
+         self.myage=age
+         self.ofcname=ofcname
+         self.mydes=des
+
+     def empdetails(self):
+          print("Name of employee is",self.myname)
+          print(" Age of employee is",self.myage)
+          print(" Office Name  is",emp.ofcname)
+          print(" Office Name  is",self.mydes)
+          print(" Office Location   is",emp.location)
+
+s1=emp("Niharika",22,"Wipro","FullStack Dev")
+s2=emp("Harika",25,"Goggle","Backend Dev")
+s3=emp("Niha",28,"Amazon","Frontend Dev")
+s4=emp("Nikhil",28,"Amazon","Frontend Dev")
+
+print("-------Employee1 details------")
+s1.empdetails()
+print("-------Employee2 details------")
+s2.empdetails()
+print("-------Employee3 details------")
+s3.empdetails()
+print("-------Employee4 details------")
+s4.empdetails()
+
+class Bank:
+     bankname="SBI"
+     loc="Mumbai"
+     def __init__(self,empId,name,des,sal):
+          self.empId=empId
+          self.name=name
+          self.des=des
+          self.sal=sal
+     def displayDetails(self):
+          print("Employee Id is", self.empId)
+          print("Employee Name is", self.name)
+          print("Employee Designation is", self.des)
+          print("Employee Salary is", self.sal)
+          print("Bank Name is", Bank.bankname)
+          print("Bank Loction is", Bank.loc)
+
+b1=Bank(1001,"Niharika","Manager",1000000)
+b2=Bank(1002,"Harika","Clerk",25000)
+b3=Bank(1003,"Niha","Assistant Manager",100000)
+b4=Bank(1004,"Nikhil","CEO",1500000)
+
+print("-------Employee1 details------")
+b1.displayDetails()
+print("-------Employee2 details------")
+b2.displayDetails()
+print("-------Employee3 details------")
+b3.displayDetails()
+print("-------Employee4 details------")
+b4.displayDetails()
+
+
+
+class College:
+     collegename="Osmania University"
+     address="Amberpet / Tarnaka"
+
+
+     def __init__(self,course,fee,duration,qual):
+          self.course=course
+          self.fee=fee
+          self.duration=duration
+          self.qual=qual
+     def clgDetails(self):
+          print("University Name  ",College.collegename)
+          print("Name of Course ",self.course)
+          print("Fee's Of Course",self.fee)
+          print("Duration Of Course",self.duration)
+          print("Qualifaction Of Course",self.qual)
+          print("University Name  ",College.address)
+
+
+c1=College("B.A",50000,"3Years","12th+")
+c2=College("B.SC",10000,"3Years","12th+")
+c3=College("B.zc",25000,"2Years","12th+")
+c4=College("B.pharmacy",200000,"4Years","12th+")
+
+print("-------Course1 details------")
+c1.clgDetails()
+print("-------Course2 details------")
+c2.clgDetails()
+print("-------Course3 details------")
+c3.clgDetails()
+print("-------Course4 details------")
+c4.clgDetails()

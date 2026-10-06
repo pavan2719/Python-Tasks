@@ -1,0 +1,460 @@
+##WITHOUT INPUT AND WITHOUT RETURN(1)
+
+#1.print name,age,college
+
+# def details():
+#     name="Bhavani"
+#     age="20"
+#     college="MTIST"
+#     print(name)
+#     print(age)
+#     print(college)
+# details()
+
+#2.print numbers from 1 to 10
+
+# def numbers():
+#     for i in range(1,11):
+#         print(i,end=" ")
+# numbers()
+
+#3.print even numbers from 1 to 20
+
+# def evenNum():
+#     for i in range(1,21):
+#         if i%2==0:
+#             print(i,end=" ")
+# evenNum()
+
+#4.print odd numbers
+
+# def oddNum():
+#     for i in range(1,21):
+#         if i%2!=0:
+#             print(i,end=" ")
+# oddNum() 
+
+#5.tables from 1 to 5
+
+# def tables():
+#     for i in range(1,6):
+#         for j in range(1,11):
+#             print(f"{i} x {j} = {i*j}")
+
+# tables()
+
+#6.print numbers in reverse from 20 to 1
+
+# def reverse():
+#     for i in range(20,0,-1):
+#         print(i,end=" ")
+# reverse()
+
+#7.check given number is even or odd
+
+# def posNum():
+#     for i in range(-20,21):
+#         if i<0:
+#             print("positive")
+#         elif i>0:
+#             print("Negative")
+#         else:
+#             print("Zero")
+# posNum()
+
+#8.squares of the given number
+
+# def square():
+#     n=5
+#     print(f"square of {n} is {n**2}")
+# square()
+
+#9.cube of the numbers in the range of 1 to 30
+
+# def cubes():
+#     for i in range(1,31):
+#         print(f"cube of {i} is {i**3}")
+# cubes()
+
+#10.Find the sum of even numbers
+
+# def sumEven():
+#     sum=0
+#     for i in range(1,101):
+#         if i%2==0:
+#             sum=sum+i
+#     print(sum)
+# sumEven()
+
+##WITH INPUT WITHOUT RETURN(2)
+
+# 1.def student_marks(marks):
+#     if marks>75 and marks<=100:
+#         print("A Grade")
+#     elif marks<75 and marks>=50:
+#         print("B Grade")
+#     elif marks<50 and marks>=35:
+#         print("C Grade")
+#     else:
+#         print("Fail")
+# student_marks(67)
+# student_marks(89)
+# student_marks(34)
+# student_marks(91)
+
+#2.Check it is leap year or not
+
+# def leap_year(year):
+#     if year%400==0 or year%4==0 and year%100!=0:
+#         print(f"{year} is a Leap year")
+#     else:
+#         print(f"{year} is not a leap year")
+# leap_year(2016)
+# leap_year(2017)
+# leap_year(2020)
+
+#3.check eligible for vote or not
+
+# def vote_eligible(age):
+#     if age>=18:
+#         print(f"{age} age is eligible for vote")
+#     else:
+#         print(f"{age} age is not eligible for vote")
+# vote_eligible(29)
+# vote_eligible(2)
+
+#4.Check the charater is vowel or consonent
+
+# def check_character(Alphabet):
+#     if Alphabet=="a" or Alphabet=="A" or Alphabet=="E" or Alphabet=="e" or Alphabet=="I" or Alphabet=="i" or Alphabet=="O" or Alphabet=="o" or Alphabet=="u" or Alphabet=="U":
+#         print(f"{Alphabet} is a vowel")
+#     else:
+#         print(f"{Alphabet} is not a vowel")
+# check_character("A")
+# check_character("s")
+
+#5.Check whether the given character is digit or alphabet or symbol
+
+# def check_aplha(char):
+#     if char>="A" and char<="Z" or char>="a" and char<="z":
+#         print("Alphabet")
+#     elif  char<="0" or char>="1" and char<="9":
+#         print("Digit")
+#     else:
+#         print("Symbol")
+# check_aplha("a")
+# check_aplha("20")
+# check_aplha("-23")
+# check_aplha("@")
+# check_aplha("28976")
+
+#6.check given number is palindrome or not
+
+# def palindrome(number):
+#     i=number
+#     sum=0
+#     while number!=0:
+#         ld=number%10
+#         sum=sum*10+ld
+#         number=number//10
+#     if i==sum:
+#         print("It is a palindrome")
+#     else:
+#         print("Not a palindrome")
+# palindrome(121)
+# palindrome(234)
+
+#7.print number of digits in a number
+
+# def digits(number):
+#     count=0
+#     while number!=0:
+#         ld=number%10
+#         count=count+1
+#         number=number//10
+#     print(count)
+# digits(123)
+# digits(56743)
+
+#8.check it is armastrong or not
+
+# def armastrong(number):
+#     i=number
+#     sum=0
+#     while number!=0:
+#         ld=number%10
+#         cube=ld**3
+#         sum=sum+cube
+#         number=number//10
+#     if sum==i:
+#         print("It is a armastrong")
+#     else:
+#         print("It is not a armastrong")
+# armastrong(153)
+# armastrong(23)
+
+#Check it is a triangle or not
+
+# def triangle(ang1,ang2,ang3):
+#     if ang1+ang2+ang3==180:
+#         print("It is a triangle")
+#     else:
+#         print("It is not a triangle")
+# triangle(80,60,40)
+# triangle(60,60,60)
+# triangle(40,60,60)
+
+#10.Convert celsius to fehrenhetic
+
+# def convertion(celsius):
+#     fehrenhetic=(celsius*(9/5)+35)
+#     print(fehrenhetic)
+# convertion(90)
+# convertion(56)
+
+##WITHOUT INPUT AND WITH RETURN(3)
+
+#1.without input and with return
+
+# def triangle_area():
+#     r=7
+#     area=3.14*(r**2)
+#     return area
+# print(triangle_area())
+
+#2.fibannoci series
+
+# def fibannoci():
+#     a=0
+#     b=1
+#     result=""
+#     for i in range(1,11):
+#         result=result+str(a)+" "
+#         temp=a+b
+#         a=b
+#         b=temp
+#     return result
+# print(fibannoci())
+
+#3.average of even numbers
+
+# def avgEven():
+#     sum=0
+#     count=0
+#     for i in range(1,21):
+#         if i%2==0:
+#             sum=sum+i
+#             count=count+1
+#             Average=sum/count
+#     return Average
+# print(avgEven())
+
+#4.Find the largest digit in the the given number
+
+# def largest_digit():
+#     n=65784
+#     largest=0
+#     while n>0:
+#         ld=n%10
+#         if ld>largest:
+#             largest=ld
+#         n=n//10
+#     return largest
+# print(largest_digit())
+
+#5.Find the smallest digit from the given number
+
+# def smallest_digit():
+#     n=346789
+#     smallest=9
+#     while n>0:
+#         ld=n%10
+#         if ld<smallest:
+#             smallest=ld
+#         n=n//10
+#     return smallest
+# print(smallest_digit())
+
+#6.Find the number of digits
+
+# def count_digits():
+#     n=367845
+#     count=0
+#     while n>0:
+#         ld=n%10
+#         count=count+1
+#         n=n//10
+#     return count
+# print(count_digits())
+
+#7.sum of digits
+
+# def sum_digit():
+#     n=23678
+#     sum=0
+#     while n>0:
+#         ld=n%10
+#         sum=sum+ld
+#         n=n//10
+#     return sum
+# print(sum_digit())
+
+#8.Area of rectangle
+
+# def rect_area():
+#     length=20
+#     breadth=39
+#     area=length*breadth
+#     return area
+# print(rect_area())
+
+#9.sum of even numbers
+
+# def sum_even():
+#     sum=0
+#     for i in range(1,21):
+#         if i%2==0:
+#             sum=sum+i
+#     return sum
+# print(sum_even())
+
+
+#10.sum of odd numbers
+
+# def sum_even():
+#     sum=0
+#     for i in range(1,21):
+#         if i%2!=0:
+#             sum=sum+i
+#     return sum
+# print(sum_even())
+
+##WITH INPUT AND WITH RETURN(4)
+
+#1.basic salary and returns salary after addind 20% bonus
+
+# def bonus_salary(basic_salary):
+#     bonus=(20/100)*basic_salary
+#     total_salary=basic_salary+bonus
+#     return total_salary
+# print(bonus_salary(20000))
+
+#2.electricity bills calculations
+
+# def elctric_bill(units):
+#     if (units>0 and units<=100):
+#         bill=units*2
+#         return bill
+#     elif(units>100 and units<=200):
+#         bill=units*4
+#         return bill
+#     elif(units>200 and units<=300):
+#         bill=units*6
+#         return bill
+#     elif(units<0):
+#         return bill
+#     else:
+#         bill=units*7
+#         return bill
+# print(elctric_bill(200))
+# print(elctric_bill(560))
+
+#3.check the given number is 3 digits number or not
+
+# def three_digit(number):
+#     if number>99 and number<999:
+#         num="Three digit number"
+#         return num
+#     else:
+#         num2="Not a three digit number"
+#         return num2
+# print(three_digit(564))
+# print(three_digit(5674))
+
+#4.find the if the nuber is divisible by three and five
+
+# def check_div(number):
+#     if number%3==0 and number%5==0:
+#         num1="Divisible by both 3 and 5"
+#         return num1
+#     else:
+#         num2="Not divisible by both 3 and 5"
+#         return num2
+# print(check_div(15))
+# print(check_div(12))
+
+#5.Simple interest based on principle,rate and time
+
+# def simple_int(p,r,t):
+#     simple_interest=p*r*t/100
+#     return simple_interest
+# total=simple_int(20,30,4)
+# print("Simple interest is:",total)
+
+#6.Find the lcm of the given number
+# def lcm_num(num1,num2):
+#     if num1>num2:
+#         larg_num=num1
+#     else:
+#         larg_num=num2
+#     while True:
+#         if larg_num%num1==0 and larg_num%num2==0:
+#             return larg_num
+#         larg_num=larg_num+1
+# num=lcm_num(6,7)
+# print("LCM is",num)
+
+# #7.Print even numbers in the given number
+
+# def count_even(number):
+#     result=""
+#     while number>0:
+#         ld=number%10
+#         number=number//10
+#         if ld%2==0:
+#             result=str(ld)+" "+result
+#     return result
+# print(count_even(346785))
+
+#8.print odd numbers
+
+# def count_even(number):
+#     result=""
+#     while number>0:
+#         ld=number%10
+#         number=number//10
+#         if ld%2!=0:
+#             result=str(ld)+" "+result
+#     return result
+# print(count_even(346785))
+
+#9.Find the triangle is equivalent or not
+
+# def equi_triangle(s1,s2,s3):
+#     if s1==s2 or s2==s3 or s3==s1:
+#         tri1="It is a equivalent triangle"
+#         return tri1
+#     else:
+#         tri2="It is not a equivalent triangle"
+#         return tri2
+# print(equi_triangle(60,60,60))
+# print(equi_triangle(20,80,80))
+
+#10.display age categories
+
+# def age_cat(age):
+#     if age<13:
+#         a1="Child"
+#         return a1
+#     elif age>13 and age<20:
+#        a2="Teen agers"
+#        return a2
+#     elif age>=20 and age<=59:
+#         a3="Adult"
+#         return a3
+#     else:
+#        a4="Old"
+#        return a4
+# print(age_cat(34))
+# print(age_cat(67))
+# print(age_cat(3))

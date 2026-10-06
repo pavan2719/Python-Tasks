@@ -1,0 +1,132 @@
+#single inheritance without constructor
+# class Vehicle:
+#     def start(self):
+#         print("Vehicle Starts")
+# class Bike(Vehicle):
+#     def drive(self):
+#         print("Bike is on a ride ")
+# b=Bike()
+# b.start()
+# b.drive()
+
+#----------------------------------------------------------------------------------------------------------------------------
+
+#single inheritance with constructor and super()
+
+# class Vehicle:
+#     def __init__(self,name,price):
+#         self.name=name
+#         self.price=price
+#     def displayVehDetails(self):
+#         print("Vehicle Name : ",self.name)
+#         print("Vehicle Price : ",self.price)
+# class Bike(Vehicle):
+#     def __init__(self,name,price,model):
+#         super().__init__(name,price)
+#         self.model=model
+# b=Bike("RoyalEnfield",250000,"Hunter350")
+# b.displayVehDetails()
+
+#-----------------------------------------------------------------------------------------------------------------------
+
+#single inheritance with constructor
+
+# class Vehicle:
+#     def __init__(self,name,price):
+#         self.name=name
+#         self.price=price
+#     def displaydet(self):
+#         print("Vehicle Name : ",self.name)
+#         print("Vehicle Price : ",self.price)
+# class Bus(Vehicle):
+#     def start(self):
+#         pass
+# b=Bus("Olvo",10000000)
+# b.displaydet()
+
+#-----------------------------------------------------------------------------------------------------------------------------------
+
+# single inheritance with constructor +super() real world example
+
+# class BankAccount:
+#     def __init__(self,account_number,C_name):
+#         self.account_number=account_number
+#         self.C_name=C_name
+#     def createAcc(self):
+#         print("Account Created")
+#         print("Account Number : ",self.account_number)
+#         print("Account Holder name : ",self.C_name)
+# class SavingsAccount(BankAccount):
+#     def __init__(self,account_number,C_name,intrest_rate):
+#         super().__init__(account_number,C_name)
+#         self.intrest_rate=intrest_rate
+#     def displayDet(self):
+#         super().createAcc()
+#         print("Intrest Rate : ",self.intrest_rate)
+# s=SavingsAccount(121345,"Yashaswini",10)
+# s.displayDet()
+
+#--------------------------------------------------------------------------------------------------------------------------------------------
+
+#multiple inheritance without constructor
+
+# class Printer:
+#     def Printer(self):
+#         print("The Document is printing....")
+# class Scanner(Printer):
+#     def Scanner(self):
+#         print("The document is Scanning....")
+# class MultiFuncPrinter(Scanner):
+#     def Starts(self):
+#         print("The document is being feed into the printer...")
+
+# p=MultiFuncPrinter()
+# p.Starts()
+# p.Scanner()
+# p.Printer()
+
+#--------------------------------------------------------------------------------------------------------------------------
+
+#multiple inheritance with constructor with super()
+
+# class Employee:
+#     def __init__(self, name):
+#         self.name = name
+#         print("Employee created")
+
+# class Department(Employee):
+#     def __init__(self,name, department):
+#         super().__init__(name)
+#         self.department = department
+#     def dep(self):
+#         print("Employee Name : ",self.name)
+#         print("Employee Department : ",self.department)
+
+# class Manager(Department):
+#     def __init__(self,name,department,ssn):
+#         super().__init__(name,department)
+#         self.ssn=ssn
+#     def display(self):
+#         super().dep()
+#         print("Employee SSn : ",self.ssn)
+
+# m = Manager("Yashaswini", "IT","E-11")
+# m.display()
+
+#-----------------------------------------------------------------------------------------------------------------------------
+
+#Multiple inheritance with constructor
+
+class Animals:
+    def __init__(self,family):
+        self.family=family
+    def disps(self):
+        print("The Animal given belongs to ",self.family)
+class Reptiles(Animals):
+    def disp(self):
+        print("Reptile Family")
+class LayEggs(Reptiles):
+    def ani(self):
+        pass
+l=LayEggs("Reptilia")
+l.disps()

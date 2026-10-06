@@ -1,0 +1,469 @@
+# n=5
+# for i in range(1,6,1):
+#     print(i,end=" ") #print side by side
+
+# n=5
+
+#-----------------------Left align patterns------------------------------
+
+# 1 2 3 4 5 
+# 1 2 3 4 5 
+# 1 2 3 4 5 
+# for j in range(1,4,1):
+#     for i in range(1,6,1):
+#         print(i,end=" ")
+#     print()    
+
+
+# 1 2 3 4 5 
+# 1 2 3 4 5 
+# 1 2 3 4 5 
+# 1 2 3 4 5 
+# for j in range(1,5,1):
+#     for i in range(1,6,1):
+#         print(i,end=" ")
+#     print()    
+
+# for j in range(1,4,1):
+#     for i in range(5,0,-1):
+#         print(i,end=" ")
+#     print()    
+
+#example
+
+# 1 1 1 1 1 
+# 2 2 2 2 2 
+# 3 3 3 3 3 
+# 4 4 4 4 4 
+# 5 5 5 5 5 
+# for j in range(1,6,1):
+#     for i in range(1,6,1):
+#         print(j,end=" ")
+#     print()    
+
+#example with output
+# 5 5 5 5 5 
+# 4 4 4 4 4 
+# 3 3 3 3 3 
+# 2 2 2 2 2 
+# 1 1 1 1 1 
+
+# for j in range(5,0,-1):
+#     for i in range(1,6,1):
+#         print(j,end=" ")
+#     print()    
+
+
+# 5 4 3 2 1 
+# 5 4 3 2 1 
+# 5 4 3 2 1 
+# 5 4 3 2 1 
+# 5 4 3 2 1 
+# for j in range(5,0,-1):
+#     for i in range(5,0,-1):
+#         print(i,end=" ")
+#     print()    
+
+# for j in range(1,6,1):
+#     for i in range(1,6,1):
+#         print(i%2,end=" ")
+#     print()    
+
+# for j in range(1,6,1):
+#     for i in range(1,6,1):
+#         print(j%2,end=" ")
+#     print()    
+
+#Patterns 
+# 1 
+# 1 2 
+# 1 2 3 
+# 1 2 3 4 
+# 1 2 3 4 5 
+# for j in range(1,6,1):
+#     for i in range(1,j+1,1):
+#         print(i,end=" ")
+#     print()    
+
+# 1 
+# 2 1 
+# 3 2 1 
+# 4 3 2 1 
+# 5 4 3 2 1 
+# for j in range(1,6,1):
+#     for i in range(j,0,-1):
+#         print(i,end=" ")
+#     print()    
+
+
+# 5 
+# 5 4 
+# 5 4 3 
+# 5 4 3 2 
+# 5 4 3 2 1 
+# for j in range(5,0,-1):
+#     for i in range(5,j-1,-1):
+#         print(i,end=" ")
+#     print()    
+
+# 5 
+# 4 5 
+# 3 4 5 
+# 2 3 4 5 
+# 1 2 3 4 5 
+# for j in range(5,0,-1):
+#     for i in range(j,6,1):
+#         print(i,end=" ")
+#     print()    
+
+
+# 1 2 3 4 5 
+# 1 2 3 4 
+# 1 2 3 
+# 1 2 
+# 1 
+# for j in range(5,0,-1):
+#     for i in range(1,j+1,1):
+#         print(i,end=" ")
+#     print()    
+
+# for j in range(5,0,-1):
+#     for i in range(j,0,-1):
+#         print(i,end=" ")
+#     print()  
+#o/p  
+# 5 4 3 2 1 
+# 4 3 2 1 
+# 3 2 1 
+# 2 1 
+# 1     
+
+#-----------------------------------------Right align patterns-------------------------------------------
+
+#           1 
+#         1 2 
+#       1 2 3 
+#     1 2 3 4 
+#   1 2 3 4 5 
+# for j in range(1,6,1):
+#     for s in range(5,j-1,-1):
+#         print(" ",end=" ")
+#     for i in range(1,j+1,1):
+#         print(i,end=" ")    
+#     print()    
+
+#-----------------------------------------------------
+#           5 
+#         5 4 
+#       5 4 3 
+#     5 4 3 2 
+#   5 4 3 2 1 
+# for j in range(5,0,-1):
+#     for s in range(1,j+1,1):
+#         print(" ",end=" ")
+#     for i in range(5,j-1,-1):
+#         print(i,end=" ")
+#     print()        
+#--------------------------------------------------
+
+# for j in range(5,0,-1):
+#     for s in range(5,j,-1):
+#         print(" ",end=" ")
+#     for i in range(1,j+1,1):
+#         print(i,end=" ")
+#     print()      
+# 1 2 3 4 5 
+#   1 2 3 4 
+#     1 2 3 
+#       1 2 
+#         1 
+#   
+
+#-----------------------------------------------------------
+
+# for j in range(1,6,1):
+#     for i in range(1,j+1,1):
+#         print(j,end="")
+#     print()    
+# 1
+# 22
+# 333
+# 4444
+# 55555
+
+#------------------------------------------------------------
+# for j in range(5,0,-1):
+#     for i in range(5,j-1,-1):
+#         print(j,end="")
+#     print()  
+#   
+
+# for j in range(5,0,-1):
+#     for s in range(5,j,-1):
+#         print(" ",end=" ")
+#     for i in range(5,j+1,1):
+#         print(j,end=" ")
+#     print()    
+# 55555
+#  4444
+#   333
+#    22
+#     1
+#---------------------------------------Pyramid Patterns----------------------------------------------
+# for j in range(1,6,1):
+#     for s in range(5,j,-1):
+#         print(" ",end=" ")
+#     for i in range(j,0,-1):
+#         print(i,end=" ")
+#     for k in range(2,j+1,1):
+#         print(k,end=" ")    
+#     print()    
+
+#         1 
+#       2 1 2 
+#     3 2 1 2 3 
+#   4 3 2 1 2 3 4 
+# 5 4 3 2 1 2 3 4 5 
+#--------------------------------------------------------------
+# for j in range(1,6,1):
+#     for s in range(5,j,-1):
+#         print(" ",end=" ")
+#     for i in range(1,j+1,1):
+#         print(j,end=" ")
+#     for k in range(2,j+1,1):
+#         print(j,end=" ")    
+#     print()    
+
+#         1 
+#       2 2 2 
+#     3 3 3 3 3 
+#   4 4 4 4 4 4 4 
+# 5 5 5 5 5 5 5 5 5 
+#---------------------------------------------------------------------------------
+# for j in range(1,6,1):
+#     for s in range(5,j,-1):
+#         print(" ",end=" ")
+#     for i in range(1,j+1,1):
+#         print(i,end=" ")
+#     for k in range(j-1,0,-1):
+#         print(k,end=" ")    
+#     print()    
+
+#         1 
+#       1 2 1 
+#     1 2 3 2 1 
+#   1 2 3 4 3 2 1 
+# 1 2 3 4 5 4 3 2 1 
+#------------------------------------------------------------------------------------
+# for j in range(1,6,1):
+#     for s in range(1,j,1):
+#         print(" ",end=" ")
+#     for i in range(5,j-1,-1):
+#         print(i,end=" ")
+#     for k in range(j+1,6,1):
+#         print(k,end=" ")    
+#     print()    
+# 5 4 3 2 1 2 3 4 5 
+#   5 4 3 2 3 4 5 
+#     5 4 3 4 5 
+#       5 4 5 
+#         5 
+#----------------------------------------------------
+# for j in range(5,0,-1):
+#     for s in range(5,j,-1):
+#         print(" ",end=" ")
+#     for i in range(j):
+#         print(j,end=" ")
+#     for k in range(1,j):
+#         print(j,end=" ")    
+#     print()    
+
+# 5 5 5 5 5 5 5 5 5 
+#   4 4 4 4 4 4 4 
+#     3 3 3 3 3 
+#       2 2 2 
+#         1 
+
+#------------------------------------------------------
+# for j in range(5,0,-1):
+#     for s in range(1,j,1):
+#         print(" ",end=" ")
+#     for i in range(5,j-1,-1):
+#         print(j,end=" ")
+#     for k in range(4,j-1,-1):
+#         print(j,end=" ")    
+#     print()    
+
+#         5 
+#       4 4 4 
+#     3 3 3 3 3 
+#   2 2 2 2 2 2 2 
+# 1 1 1 1 1 1 1 1 1 
+#   
+#--------------------------------------------------------
+# for j in range(1,6,1):
+#     for s in range(1,j):
+#         print(" ",end=" ")
+#     for i in range(5,j-1,-1):
+#         print(j,end=" ")
+#     for k in range(4,j-1,-1):
+#         print(j,end=" ")    
+#     print()   
+
+# 1 1 1 1 1 1 1 1 1 
+#   2 2 2 2 2 2 2 
+#     3 3 3 3 3 
+#       4 4 4 
+#         5  
+#----------------------------------------------------------
+
+# for j in range(1,6,1):
+#     for s in range(j-1):
+#         print(" ",end=" ")
+#     for i in range(5,j-1,-1):
+#         print(i,end=" ")
+#     print()    
+
+# 5 4 3 2 1 
+#   5 4 3 2 
+#     5 4 3 
+#       5 4 
+#         5 
+#-----------------------------------------------------------
+# for j in range(5,0,-1):
+#     for s in range(5,j,-1):
+#         print(" ",end=" ")
+#     for i in range(j,0,-1):
+#         print(i,end=" ")
+#     print()  
+
+# 5 4 3 2 1 
+#   4 3 2 1 
+#     3 2 1 
+#       2 1 
+#         1 
+#----------------------------------------------------------
+# for j in range(5,0,-1):
+#     for s in range(5,j,-1):
+#         print(" ",end=" ")
+#     for i in range(1,j+1,1):
+#         print(i,end=" ")
+#     print()    
+# 1 2 3 4 5 
+#   1 2 3 4 
+#     1 2 3 
+#       1 2 
+#         1 
+#----------------------------------------------------------
+# for j in range(1,6,1):
+#     for s in range(1,j,1):
+#         print(" ",end=" ")
+#     for i in range(j,6,1):
+#         print(i,end=" ")    
+#     print()    
+# 1 2 3 4 5 
+#   2 3 4 5 
+#     3 4 5 
+#       4 5 
+#         5 
+#---------------------------------------------------------
+# for j in range(1,6,1):
+#     for s in range(5,j,-1):
+#         print(" ",end=" ")
+#     for i in range(j,0,-1):
+#         print(i,end=" ")
+#     for k in range(2,j+1,1):
+#         print(k,end=" ") 
+#     print()           
+
+#         1 
+#       2 1 2 
+#     3 2 1 2 3 
+#   4 3 2 1 2 3 4 
+# 5 4 3 2 1 2 3 4 5 
+#----------------------------------------------------
+# for j in range(5,0,-1):
+#     for s in range(1,j+1,1):
+#         print(" ",end=" ")
+#     for i in range(j,6,1):
+#         print(i,end=" ")
+#     for k in range(4,j-1,-1):
+#         print(k,end=" ") 
+#     print()        
+#           5 
+#         4 5 4 
+#       3 4 5 4 3 
+#     2 3 4 5 4 3 2 
+#   1 2 3 4 5 4 3 2 1
+# ---------------------------------------------------
+# for j in range(1,6,1):
+#     for s in range(5,j,-1):
+#         print(" ",end=" ")
+#     for i in range(1,j+1,1):
+#         print(i,end=" ")
+#     for k in range(j-1,0,-1):
+#         print(k,end=" ") 
+#     print()  
+#         1 
+#       1 2 1 
+#     1 2 3 2 1 
+#   1 2 3 4 3 2 1 
+# 1 2 3 4 5 4 3 2 1  
+#------------------------------------------------------
+# for j in range(5,0,-1):
+#     for s in range(5,j,-1):
+#         print(" ",end=" ")
+#     for i in range(j,0,-1):
+#         print(i,end=" ")
+#     for k in range(2,j+1,1):
+#         print(k,end=" ") 
+#     print()  
+# 5 4 3 2 1 2 3 4 5 
+#   4 3 2 1 2 3 4 
+#     3 2 1 2 3 
+#       2 1 2 
+#         1     
+#-----------------------------------------------------
+
+# for j in range(1,6,1):
+#     for s in range(1,j+1,1):
+#         print(" ",end=" ")
+#     for i in range(j,6,1):
+#         print(i,end=" ")
+#     for k in range(4,j-1,-1):
+#         print(k,end=" ") 
+#     print()  
+
+# 1 2 3 4 5 4 3 2 1 
+#   2 3 4 5 4 3 2 
+#     3 4 5 4 3 
+#       4 5 4 
+#         5 
+#--------------------------------------------------
+# for j in range(5,0,-1):
+#     for s in range(1,j,1):
+#         print(" ",end=" ")
+#     for i in range(5,j-1,-1):
+#         print(i,end=" ")
+#     for k in range(j+1,6,1):
+#         print(k,end=" ") 
+#     print()  
+#         5 
+#       5 4 5 
+#     5 4 3 4 5 
+#   5 4 3 2 3 4 5 
+# 5 4 3 2 1 2 3 4 5
+# ------------------------------------------------- 
+# for j in range(5,0,-1):
+#     for s in range(j,6,1):
+#         print(" ",end=" ")
+#     for i in range(1,j+1,1):
+#         print(i,end=" ")
+#     for k in range(j-1,0,-1):
+#         print(k,end=" ") 
+#     print()  
+# 1 2 3 4 5 4 3 2 1 
+#   1 2 3 4 3 2 1 
+#     1 2 3 2 1 
+#       1 2 1 
+#         1
